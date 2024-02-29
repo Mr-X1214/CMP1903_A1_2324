@@ -30,7 +30,6 @@ namespace CMP1903_A1_2324
         Die Die3 = new Die();
 
 
-
         public int[] dierolling() // this creates the array for the values ot be stored in
         {
             Die1.Roll(); // this rolls the first die

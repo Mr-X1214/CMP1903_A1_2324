@@ -14,6 +14,8 @@ namespace CMP1903_A1_2324
          */
 
         //Property
+
+
         // this creates the variable for the value of the die roll to be stored in
         public int die_value = 0;
 

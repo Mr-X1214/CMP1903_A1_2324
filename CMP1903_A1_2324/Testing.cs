@@ -24,7 +24,7 @@ namespace CMP1903_A1_2324
         Die TestDie = new Die();
         
 
-        public void Dietesting() // this is used to do the testing so I can easily call the functiion
+        public void Dietesting() // this is used to do the testing so I can easily call the function
         {
             int[] Values = TestGame.dierolling(); // this creates an array so I can use it to hold the value of the dice roll total
             
