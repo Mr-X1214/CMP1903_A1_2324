@@ -46,7 +46,7 @@ namespace CMP1903_A1_2324
                 else
                 {
                     Console.WriteLine("That isn't a valid choice, choose again. y or n.");
-                    RollAgain = true; // this gives the user another chance to put in the right input incase it was an error on their behalf
+                    RollAgain = true; // this gives the user another chance to put in the right input
                 }
             }
 

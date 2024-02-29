@@ -33,7 +33,7 @@ namespace CMP1903_A1_2324
             Console.WriteLine("Testing the dice rolls.");
             // this creates a dice roll to test
             TestDie.Roll();
-            Debug.Assert(TestDie.Roll() > 0); // this and the Debug.Assert bellow are there to make sure the values are within a specific range
+            Debug.Assert(TestDie.Roll() > 0); // this and the one bellow tests that it's within a specific range
             Debug.Assert(TestDie.Roll() < 7);
             Console.WriteLine("Test of the dice rolls complete.");
             int TestSum = Values[0]; // this stores the sum of the dice rolls into the array
