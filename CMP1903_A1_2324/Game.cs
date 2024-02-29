@@ -46,7 +46,8 @@ namespace CMP1903_A1_2324
             int Die2val = Die2.die_value;
             int Die3val = Die3.die_value;
 
-            sum_of_die += Die1val + Die2val + Die3val; // this adds the rolls together and stores it in that variable
+            // this adds the rolls together and stores it in that variable
+            sum_of_die += Die1val + Die2val + Die3val; 
             
             // this prints out the different values so that the user can see it
             Console.WriteLine("The values of the 3 dice rolls:");
@@ -61,7 +62,8 @@ namespace CMP1903_A1_2324
             return values;
         }
 
-        public void ReRollDie() // this here for the rerolling only it doesn't use an array, but it is the same as the game
+        // this here for the rerolling only it doesn't use an array, but it is the same as the game
+        public void ReRollDie()
         {
             Die1.Roll();
             Thread.Sleep(2);
@@ -73,7 +75,8 @@ namespace CMP1903_A1_2324
             int Die2val = Die2.die_value;
             int Die3val = Die3.die_value;
 
-            ReRollVal += Die1val + Die2val + Die3val; // it uses this variable instead to store it so they are seperate
+            // it uses this variable instead to store it so they are seperate
+            ReRollVal += Die1val + Die2val + Die3val;
 
             Console.WriteLine("The values of the 3 dice rolls:");
             Console.WriteLine(Die1val);
@@ -82,6 +85,7 @@ namespace CMP1903_A1_2324
             Console.WriteLine("The sum of all dice is:");
             Console.WriteLine(ReRollVal);
 
+            // this makes sure that it doesn't store the same value after it's finished with
             ReRollVal = 0;
         }
             

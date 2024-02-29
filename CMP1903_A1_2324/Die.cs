@@ -28,7 +28,5 @@ namespace CMP1903_A1_2324
             // returns the value
             return die_value;
         }
-
-
     }
 }
