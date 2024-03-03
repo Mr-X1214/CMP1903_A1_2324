@@ -14,11 +14,16 @@ namespace CMP1903_A1_2324
          */
 
         //Property
+
+
         // this creates the variable for the value of the die roll to be stored in
         public int die_value = 0;
 
         //Method
-        public int Roll() // this is the method that rolls the dice
+
+
+        // this is the method that rolls the dice
+        public int Roll() 
         {
             // creates the random
             Random rand = new Random();

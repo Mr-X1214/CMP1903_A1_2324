@@ -22,12 +22,11 @@ namespace CMP1903_A1_2324
         // this creates the game and die game object
         Game TestGame = new Game();
         Die TestDie = new Die();
-        
 
-        public void Dietesting() // this is used to do the testing so I can easily call the functiion
+        // this is used to do the testing so I can easily call the function
+        public void Dietesting()
         {
             int[] Values = TestGame.dierolling(); // this creates an array so I can use it to hold the value of the dice roll total
-
             
             // this if for testing the dice rolls
             Console.WriteLine("Testing the dice rolls.");
