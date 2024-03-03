@@ -30,7 +30,8 @@ namespace CMP1903_A1_2324
         Die Die3 = new Die();
 
 
-        public int[] dierolling() // this creates the array for the values ot be stored in
+        // this creates the array for the values to be stored in
+        public int[] dierolling() 
         {
             Die1.Roll(); // this rolls the first die
             Thread.Sleep(2); // this creates a delay so that it has enough time to truly randomise the next output

@@ -20,7 +20,10 @@ namespace CMP1903_A1_2324
         public int die_value = 0;
 
         //Method
-        public int Roll() // this is the method that rolls the dice
+
+
+        // this is the method that rolls the dice
+        public int Roll() 
         {
             // creates the random
             Random rand = new Random();
