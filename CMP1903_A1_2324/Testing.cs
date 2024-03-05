@@ -24,9 +24,9 @@ namespace CMP1903_A1_2324
         Die TestDie = new Die();
 
         // this is used to do the testing so I can easily call the function
-        public void Dietesting()
+        public void DieTesting()
         {
-            int[] Values = TestGame.dierolling(); // this creates an array so I can use it to hold the value of the dice roll total
+            int[] Values = TestGame.DieRolling(); // this creates an array so I can use it to hold the value of the dice roll total
             
             // this if for testing the dice rolls
             Console.WriteLine("Testing the dice rolls.");
@@ -35,15 +35,18 @@ namespace CMP1903_A1_2324
             Debug.Assert(TestDie.Roll() > 0); // this and the one bellow tests that it's within a specific range
             Debug.Assert(TestDie.Roll() < 7);
             Console.WriteLine("Test of the dice rolls complete.");
-            int TestSum = Values[0]; // this stores the sum of the dice rolls into the array
+            int testSum = Values[0]; // this stores the sum of the dice rolls into the array
 
             // this tests the sum of the dice rolls
             Console.WriteLine("Testing sum of dice rolls.");
-            Debug.Assert(TestSum > 2); // this and the one below tests that the sum of the dice rolls is within a specific range
-            Debug.Assert(TestSum < 19);
+            Debug.Assert(testSum > 2); // this and the one below tests that the sum of the dice rolls is within a specific range
+            Debug.Assert(testSum < 19);
             Console.WriteLine("Testing sum of dice complete.");
 
             Console.WriteLine("All testing successful");
+
+            // this makes sure that the variable returns to 0 after the testing is done so that it doesn't store the value and keeping adding it on
+            TestGame.sumOfdie = 0;
 
         }
         
