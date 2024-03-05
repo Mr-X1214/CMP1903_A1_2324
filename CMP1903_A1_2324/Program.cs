@@ -17,15 +17,14 @@ namespace CMP1903_A1_2324
 
 
             
-            // these are here to create the testing game object, the game object and a boolean for the while loop
+            // these are here to create the testing game object and a boolean for the while loop
             Testing testing = new Testing();
-            bool RollAgain = true;
-            Game game = new Game();
+            bool rollAgain = true;
             
             // this calling the testing method
-            testing.Dietesting();
+            testing.DieTesting();
 
-            while (RollAgain == true) // this while loop allows the user to decide if they will roll again
+            while (rollAgain == true) // this while loop allows the user to decide if they will roll again
             {
                 Console.WriteLine("Roll again? Enter y or n:");
 
@@ -34,20 +33,20 @@ namespace CMP1903_A1_2324
                 // this if statment is here to help decide what will happen depending on the player input
                 if (choice == "y")
                 {
-                    game.ReRollDie(); // this calls the game method for rerolling
-                    RollAgain = true; // this continues the loop
+                    testing.DieTesting(); // this calls the testing method so they can reroll
+                    rollAgain = true; // this continues the loop
                 }
 
                 else if (choice == "n")
                 {
                     Console.WriteLine("End of program, press any key to exit.");
-                    RollAgain = false; // this discontinues the loop
+                    rollAgain = false; // this discontinues the loop
                 }
 
                 else
                 {
                     Console.WriteLine("That isn't a valid choice, choose again. y or n.");
-                    RollAgain = true; // this gives the user another chance to put in the right input
+                    rollAgain = true; // this gives the user another chance to put in the right input
                 }
             }
 
