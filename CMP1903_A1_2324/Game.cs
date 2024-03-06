@@ -33,10 +33,10 @@ namespace CMP1903_A1_2324
         public int[] DieRolling() 
         {
             Die1.Roll(); // this rolls the first die
-            Thread.Sleep(2); // this creates a delay so that it has enough time to truly randomise the next output
+            Thread.Sleep(60); // this creates a delay so that it has enough time to truly randomise the next output
 
             Die2.Roll(); // this rolls the second die
-            Thread.Sleep(2); // this is another delay
+            Thread.Sleep(60); // this is another delay
 
             Die3.Roll(); // this rolls the last die and doesn't need a delay
 
@@ -65,4 +65,6 @@ namespace CMP1903_A1_2324
         
            
     }
+
+
 }
